@@ -1,0 +1,30 @@
+#name, main, version and api are required
+name: chatclear
+main: chatclear.Chatclear
+#remember version and api is string, don't write it like this: 1.0.0, or there will be an exception
+version: "1.0.0"
+api: ["1.0.0"]
+
+load: POSTWORLD
+author: sjimin
+description: Show you the accessing OP
+website: https://github.com/sJimin/Nukkit-Plugins
+
+
+commands:
+ cc:
+  permission: cc.commands
+  description: Only OP has authority to remove all chatting!
+  usage: "/cc"
+  default: OP
+ cp:
+  permission: cp.commands
+  description: what can be seen chatting through you is removed by using this command!
+  usage: "/cp"
+  default: true
+  
+permissions:
+ cc.commands:
+  default: OP
+ cp.commands:
+  default: true
