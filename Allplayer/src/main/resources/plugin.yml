@@ -1,0 +1,94 @@
+#name, main, version and api are required
+name: allplayer
+main: allplayer.Allplayer
+#remember version and api is string, don't write it like this: 1.0.0, or there will be an exception
+version: "1.0.0"
+api: ["1.0.0"]
+
+load: POSTWORLD
+author: sjimin
+description: allplayer
+website: https://github.com/sJimin/Nukkit-Plugins
+
+commands:
+ allplayer:
+  permission: allplayer.commands
+  description: Allplayer usage!
+  usage: "/allplayer"
+  default: OP
+ allplace:
+  permission: allplace.commands
+  description: ban on placing block
+  usage: "/allplace"
+  default: OP
+ allbreak:
+  permission: allbreak.commands
+  description: ban destroy block
+  usage: "/allbreak"
+  default: OP
+ allchat: 
+  permission: allchat.commands
+  description: chat ban
+  usage: "/allchat"
+  default: OP
+ allmove: 
+  permission: allmove.commands
+  description: ban movement
+  usage: "/allmove"
+  default: OP
+ allexplode:
+  permission: allexplode.commands
+  description: ban explode
+  usage: "/allexplode" 
+  default: OP
+ allpvp:
+  permission: allpvp.commands
+  description: ban fighting
+  usage: "/allpvp"
+  default: OP
+ allgive:
+  permission: allgive.commands
+  description: give items to allPlayer
+  usage: "/allgive"
+  default: OP
+ allfood:
+  permission: allfood.commands
+  description: ban eating food
+  usage: "/allfood"
+  default: OP
+ alleffect: 
+  permission: alleffect.commands
+  description: give effects to allPlayer
+  usage: "/alleffect"
+  default: OP
+ alleffectclear:
+  permission: alleffectclear.commands
+  description:  allPlayer is removed effects by admin
+  usage: "/alleffectclear"
+  default: OP					   
+permissions:
+ allplayer.commands:
+  default: OP
+ allplace.commands:
+  default: OP
+ allbreak.commands:
+  default: OP
+ allchat.commands:
+  default: OP
+ allmove.commands:
+  default: OP
+ allexplode.commands:
+  default: OP
+ allpvp.commands:
+  default: OP
+ allgive.commands:
+  default: OP
+ allfood.commands:
+  default: OP
+ alleffect.commands:
+  default: OP
+ alleffectclear.commands:
+  default: OP
+
+  
+  
